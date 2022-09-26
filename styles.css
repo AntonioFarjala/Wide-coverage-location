@@ -1,0 +1,126 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    margin: 47px 0 0 42px;
+    transition: transform .3s;
+
+}
+
+.header-button:hover {
+    transform: scale(1.1)
+    
+}
+
+body{
+    background: #d3d5d8;
+}
+
+
+.link-header {
+    letter-spacing: 0.875px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #17233D;
+    cursor: pointer;
+    margin-right: 32px;
+
+
+
+}
+
+.header-button {
+    background: #6FBF44;
+    Width:124px;
+    Height:51px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 13px 29px 14px 28px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.img-log { 
+    margin: 163px 0 0 123px;
+    width: 595px;
+    height: 500px;
+    display: inline-block;
+
+}
+
+section {
+    display: inline-block;
+    width: 493px;
+    margin-left: 85px;
+}
+
+h1{
+    
+    margin-bottom: 47px;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 82px;
+    color: #161A49;
+
+}
+
+p {
+     
+    margin-bottom: 55px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    color: #4B505A;
+}
+
+a {
+    height: 27px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #6FBF44;
+    cursor: pointer;
+}
+
+/* animations*/
+
+header {
+    animation: fromtop .7s .2s backwards; /*backwards ele puxa as propriedades para a animação*/
+}
+
+main {
+    animation: frombottom .7s backwards;
+}
+
+@keyframes fromtop { /*keyframes -nome qualquer- serve pra dar inicio a animação da imagem vindo do top da pagina*/
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0); /*traslateY é o eixo vertical da pagina cima para baixo*/
+    }
+}
+
+@keyframes frombottom { /*keyframes -nome qualquer- serve pra dar inicio a animação da imagem vindo do top da pagina*/
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0); /*traslateY é o eixo vertical da pagina cima para baixo*/
+    }
+}
