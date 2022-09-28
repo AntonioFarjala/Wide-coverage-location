@@ -82,7 +82,7 @@ p {
     color: #4B505A;
 }
 
-a {
+.link-section {
     height: 27px;
     font-weight: 500;
     font-size: 18px;
@@ -124,3 +124,58 @@ main {
         transform: translateY(0); /*traslateY é o eixo vertical da pagina cima para baixo*/
     }
 }
+
+@media screen and (max-width: 600px){
+
+    div{
+        width: 50%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        position: block;
+    }
+
+
+    .link-header {
+        display: none;
+    }
+
+    .header-button{
+        display: block;
+        margin: 0 0 0 300%;
+    }
+
+    .img-log {
+       max-width: 100%;
+        position: absolute;
+        margin: 0 30%;
+        top: 600px;
+    }
+
+    h1 {
+        margin: 124px 55px 0 55px;
+        width: auto;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+     }
+
+     p{
+        margin: 29px 43px 26px 43px;
+        width: auto;
+        font-size: 18px;
+        line-height: 33px;
+        text-align: center;
+        
+     }
+
+     .link-section {
+        text-align: center;
+        font-size: 18px;
+        line-height: 27px;
+        margin: 0 auto;
+        display: block;
+  
+     }
+}
+
